@@ -1,9 +1,5 @@
 sealed class Character(val name: String, val weaponType: WeaponType) {
-    enum class WeaponType(val weapon: String) {
-        SWORD("меч"),
-        STICK("посох"),
-        BOW("лук")
-    }
+
 
     class Warrior(name: String, val ability: String) : Character(name, WeaponType.SWORD)
     class Mage(name: String, val spell: String) : Character(name, WeaponType.STICK)
